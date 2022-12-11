@@ -89,3 +89,28 @@ console.log(!0);
 console.log( 5 === 5 && 3 > 1 || 5)
 
 
+// циклы
+
+let pum = 50;
+
+
+// while (pum< 55){
+//     console.log(pum)
+//     pum++;
+// }; 
+
+// do {
+//     console.log(pum)
+//     pum++;
+// }
+
+while(pum < 55);
+
+for (let i = 1;i < 10; i++) {
+    if ( i === 6){
+        // break;
+        continue;
+    }
+    console.log(i)
+
+}
