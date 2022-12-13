@@ -66,6 +66,8 @@ switch(num){
 // }else{
 //     console.log('Мы уходим!');
 // }
+
+//conditions {
 const hamburger = 3;
 const fries = 3;
 const cola = 0;
@@ -87,9 +89,9 @@ console.log(!0);
 
  
 console.log( 5 === 5 && 3 > 1 || 5)
+//}
 
-
-// циклы
+// cycles
 
 let pum = 50;
 

@@ -9,7 +9,7 @@ const personalMovieDb = {
    privat:false
 };
 
-
+// practice 2  conditions and cycles{
 for(let i = 0;i < 2;i++){
     const  a = prompt('Один из последних просмотренных фильмов?',''),
       b = prompt('На сколько оцените его?', '');
@@ -38,6 +38,9 @@ console.log(personalMovieDb);
 
 
 let num = 20;
+//{
+
+// 1 lessons function {
 
 function showFirstMessage(text){
    console.log(text);
@@ -80,3 +83,46 @@ const calc = (a,b) =>  {
     console.log('1');
     return a + b;
 };
+// }
+// 2 lessons function
+// translate money
+
+ const usdCurr = 28;
+ const discount = 0.9;
+
+ function convert(amount, curr){
+     return curr * amount;
+ }
+
+ function promotion(result){
+     console.log(result * discount);
+ }
+const res = convert(500, usdCurr)
+
+promotion(res);
+
+// 3 lessons function return
+ function test(){
+    for(let i = 0;i < 5;i++){
+        console.log(i);
+        if(i === 3 )return
+    }
+    console.log('Done');
+ }
+ test();
+
+ function doNothing(){}
+ console.log(doNothing() === undefined);
+
+ 
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+
+
+// function convert(amount, curr){
+//     console.log(curr * amount);
+// }
+
+// convert(500, usdCurr); 
+// convert(500, eurCurr);  

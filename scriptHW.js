@@ -123,6 +123,18 @@ for(let i = 0;i <= lines;i++){
 console.log(result);
 
 
+//№6
+ //1.
+function sayHello() {
+   sayHello('Антон')
+   return resault;
+   }
+   function promotion(resault){
+       console.log("Привет, Антон!");
+   }
+
+   sayHello(res);
+
 
               
                
