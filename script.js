@@ -124,30 +124,6 @@ console.log(result);
 
 
 
-
-while (i <= 16) {
-   if (i % 2 === 0) {
-       i++;
-       continue;
-   } else {
-       console.log(i);
-   }
-   i++;
-}
-
-
-   //   while(j <=11){
-   //    if (j % '**'=== 1) {
-   //    i++;
-   //    continue;
-   //    }else{
-   //       console.log(j);
-   //    }
-   //   }
-
-   //   if(j === '**'){
-   //    continue;
-   //   }
-   //   for(let k = 4;k >= j;k--){
-   //    result +=''; 
-   //  } 
+              
+               
+               
