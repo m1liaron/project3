@@ -125,17 +125,44 @@ console.log(result);
 
 //№6
  //1.
-function sayHello() {
-   sayHello('Антон')
-   return resault;
+
+ function sayHello(name) {
+   return `Привет, ${name}!`;
+}
+
+sayHello('Alex');
+
+//2.
+
+function returnNeighboringNumbers(num){
+   return[num - 1, num, num + 1 ];
+}
+returnNeighboringNumbers(5);
+
+//3.
+
+function getMathResult(num, times) {
+   if (typeof(times) !== 'number' || times <= 0) {
+       return num;
    }
-   function promotion(resault){
-       console.log("Привет, Антон!");
+
+   let str = '';
+
+   for (let i = 1; i <= times; i++) {
+       if (i === times) {
+           str += `${num * i}`;
+           // Тут без черточек в конце
+       } else {
+           str += `${num * i}---`;
+           // Это тоже самое, что и
+           // str = str + num * i + "---"
+       }
    }
 
-   sayHello(res);
+   return str;
+}
 
-
+getMathResult(10, 5);
               
                
                

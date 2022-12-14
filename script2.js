@@ -114,8 +114,6 @@ promotion(res);
  function doNothing(){}
  console.log(doNothing() === undefined);
 
- 
-
 // const usdCurr = 28;
 // const eurCurr = 32;
 
