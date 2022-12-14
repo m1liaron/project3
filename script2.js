@@ -56,7 +56,7 @@ function showFirstMessage(text){
    console.log(num);
 }
 showFirstMessage("Hello World!");
-console.log(num);
+console.log(num);q
 
 //++//
 function calc(a,b){

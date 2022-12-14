@@ -159,22 +159,4 @@ first: for (let i =0; i < 3; i++){
     }
 }
 
-const number0fFilms = prompt('Скільки фільмів ви вже продивилися?','');
-
-const personalMovieDb = {
-   count: number0fFilms,
-   movies:{},
-   actors:{},
-   genres:[],
-   privat:false
-};
-
-
-
-personalMovieDb.movies[a] = b;
-personalMovieDb.movies[c] = d;
-
-
-console.log(personalMovieDb);
-
 //practice 3

@@ -240,3 +240,38 @@ console.log(parseInt(test));
 console.log(parseFloat(test));
 
 
+//N7
+
+//1
+function calculateVolumeAndArea(length) {
+   if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+       return "При вычислении произошла ошибка";
+   }
+
+   let volume = 0,
+       area = 0;
+
+   volume = length * length * length;
+   area = 6 * (length * length);
+
+   return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+}
+
+calculateVolumeAndArea(5);
+calculateVolumeAndArea(15);
+calculateVolumeAndArea(15.5);
+
+//2.
+function getCoupeNumber(seatNumber){
+ if (typeof(seatNumber) !== 'number' || !Number.isInteger(seatNumber)){
+   return "Ошибка. Проверьте правильность введенного номера места" ;
+ }
+ if(seatNumber === 3 || seatNumber  >=36 ){
+   return "Таких мест в вагоне не существует";
+ }
+ return Math.ceil(seatNumber / 4);
+}
+
+getCoupeNumber(33);
+
+
