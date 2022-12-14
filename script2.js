@@ -1,6 +1,14 @@
 "use strict"
-const number0fFilms = prompt('Скільки фільмів ви вже продивилися?','');
+let number0fFilms;   
 
+// practice 3.
+function start(){
+    number0fFilms = +prompt('Скільки фільмів ви вже продивилися?','');
+
+    while (number0fFilms == '' || number0fFilms == null || isNaN(number0fFilms)){
+      number0fFilms = +prompt('Скільки фільмів ви вже продивилися?','');
+    }
+}
 const personalMovieDb = {
    count: number0fFilms,
    movies:{},

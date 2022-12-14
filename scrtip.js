@@ -176,3 +176,5 @@ personalMovieDb.movies[c] = d;
 
 
 console.log(personalMovieDb);
+
+//practice 3
