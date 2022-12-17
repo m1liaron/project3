@@ -159,3 +159,50 @@ function done() {
 }
 
 learnJS('JavaScript',done);
+
+// object, dec object
+
+const options = {
+    name:'test',
+    width:1024,
+    height:1024,
+    colors:{
+      border:'black',
+      bg:'red'
+    },
+    makeTest:function(){
+        console.log("Test");
+    }
+
+};
+options.makeTest();
+
+const {border, bg} = options.colors;
+console.log(border);
+
+const cupboard = {
+   short:'green',
+   skirt:'red',
+   Tshirt:'white',
+   box:{
+    sneakers:'white-red',
+    
+   }
+}
+// console.log(object.keys(options).length);
+
+
+// let counter = 0;
+// for (let key in  options){
+//         if (typeof(options[key]) === 'object'){
+//             for (let i in options[key]) {
+//                 console.log(`Свойствро ${i},имеет значение ${options[key][i]} `)
+//                counter++;
+//             }
+//         }else{
+//             console.log(`Свойствро ${key},имеет значение ${options[key]} `)
+//         counter++;
+//         }
+// }
+// console.log(counter); 
+
