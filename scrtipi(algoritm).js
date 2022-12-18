@@ -68,4 +68,29 @@ function SubstringSearch(sub, str)    // sub - искомая подстрока
                                      // Если искомой подстроки нет в строке, то -1.
     return -1;                       // Например,
 }                                    // SubstringSearch('ips', 'Lorem ipsum') = 6,
-                                     // SubstringSearch('dolor', 'Lorem ipsum') = -1.
+                                     // SubstringSearch('dolor', 'Lorem ipsum') = -
+//BubbleSort
+function BubbleSort(A)
+{
+    var n = A.length;
+    for(var i = 0;i < n-1;i++)
+    { if (A[j+1] < A[j])
+     {var t = A[j+1]; A[j+1] = A[j]; A[j] = t; }
+    }
+    return A;
+}
+console.log(BubbleSort)
+
+//SelectionSort
+
+function SelectionSort(A)
+{
+    var n = A.length;
+    for (var j = i+1;j < n;j++)
+    {  var min = i ;
+        for (var j = i + 1;j < n;j++)
+       {if (A[j] < A[min]) min = j;}
+       var t = A[min]; A[min] = A[ i ]; A[ i ] = t;
+    }
+    return A;
+}
