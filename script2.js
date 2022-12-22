@@ -367,3 +367,4 @@ const john = Object.create(soldier);//создаём новый объект к�
  
 // console.log(john.armor); 
 john.sayHello();
+grggfeggerghf
