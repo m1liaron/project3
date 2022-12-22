@@ -238,3 +238,58 @@ console.log(`${i}: ${item} внутри массива ${arr}`);
  products.sort(); 
  console.log(products.join('; '));
 
+//Передача по сыллке или по значению,Spread оператор(ES6-ES9)
+
+ let a = 5,
+     b = a;
+
+b = b + 5;
+console.log(b);
+console.log(a);
+
+const obj = {
+    a:b,
+    b:1
+};
+// const copy = obj; передаёт сыллку
+
+// copy.a = 10;
+
+// console.log(copy);
+// console.log(obj); 
+
+function copy (mainObj) {
+   let objCopy = {};
+
+   let key;
+   for(key in mainObj){
+    objCopy[key] = mainObj[key];
+   }
+
+   return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b:5,
+    c:{
+        x:7,
+        y:4
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+newNumbers.c.x = 10;
+
+
+console.log(newNumbers);
+console.log(numbers);   
+
+const add = {
+  d: 17,
+  e: 20
+};
+
+console.log(Object.assign({}, add));
