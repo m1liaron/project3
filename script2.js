@@ -336,3 +336,34 @@ const newObj = {...q};
 
 console.log(newObj);
 
+//36. 
+//Основы ООП,прототипно-ориентированное наследование 
+ 
+"fdfdssd"//примитив простой тип данніх 
+ 
+let spt ="some"; 
+let sptObj = new String(spt); 
+// console.log(typeof(spt));  
+// console.log(typeof(sptObj));  
+ 
+console.dir([1,2,3,4]); 
+ 
+const soldier = { 
+  health:400, 
+  armor:100, 
+  sayHello:function(){ 
+    console.log("Hello") 
+  } 
+}; 
+const john = Object.create(soldier);//создаём новый объект который будет прототипно наследоваться от солдата   
+ 
+ 
+// const john = { 
+//     health:100, 
+// }; 
+ 
+// john.__proto__= soldier; //old metode don't use a new real project прототип джона равен прототипу солдата 
+// Object.setPrototypeOf(john,soldier);//setPrototypeOf 
+ 
+// console.log(john.armor); 
+john.sayHello();
