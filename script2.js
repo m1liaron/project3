@@ -293,3 +293,46 @@ const add = {
 };
 
 console.log(Object.assign({}, add));
+
+clone.d = 20;
+
+// console.log(add);
+// console.log(clone);
+
+// frequent
+
+const oldArray = ['a','b','c'];
+const newArray = oldArray.slice();
+
+newArray[1] ='bhrhehuejipbn';
+console.log(newArray);
+console.log(oldArray);
+//4 способ spread использование оператора разворота ES6 появился для массивов ES8 для объектов
+//он разворачивает структуру и превращает её в набор каких-то данных
+const video =['youtube','rezka','rutube'],
+      blogs = ['facebook','wordpress','leivejournal'],
+      internet = [...video,...blogs,'instagramm','telegramme'];
+      console.log(internet);        
+
+
+function log(a,b,c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+const gum = [2,5,7];
+
+log(...gum)
+//5 способ создание поверхностных копий объектов и нам поможет spread
+//пример 
+const array = ["a","b"];
+const newArrays = [...array];// теперь тут копия массива который выше 
+
+const q = {
+    one:1,
+    two:2
+};
+const newObj = {...q};
+
+console.log(newObj);
+
