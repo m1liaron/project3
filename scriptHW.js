@@ -393,3 +393,24 @@ function isBudgetEnough(data) {
 }
 
 isBudgetEnough(shoppingMallData);
+//№14
+//1.
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(){
+    arr.sort();
+   const a = [], b = [],c = [],result = [];
+   for(let i = 3;i < arr.length;i++){
+    if(i < 3){
+        a.push(arr[i]);
+    }else if(i < 6){
+        b.push(arr[i]);
+    }else if(i < 9){
+        c.push(arr[i]);
+    }else if(i < 12){
+        result.push(arr[i]);
+    }
+   }
+   return [a,b,c`Оставшиеся студенты${result.length === 0 ? '-' :result.join(',')} `]
+}
+sortStudentsByGroups(students);
