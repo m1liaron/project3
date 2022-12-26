@@ -367,3 +367,26 @@ const john = Object.create(soldier);//создаём новый объект к�
  
 // console.log(john.armor); 
 john.sayHello();
+//замыкание и лексическое окружение
+
+function createCounter(){
+    let counter = 0;
+    const myFunction = function (){
+        counter = counter + 1;debugger
+        return counter;debugger
+    }
+    return myFunction;
+}
+debugger
+const increment = createCounter();debugger
+const c1 = increment();debugger
+const c2 = increment();debugger
+const c3 = increment();debugger
+
+console.log(c1,c2,c3);
+
+for(let i = 0; i < 9;i++){
+    for(let j = 0; j < 9;j++){
+        let num = 3;
+    }
+}
