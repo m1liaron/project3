@@ -82,3 +82,64 @@ const personalMovieDB = {
       })
     }
 };
+
+const lines = 5;
+let resault = '';
+
+for(let i = 0;i <= lines;i++ ){
+    for(let j = 0;j < lines - i;j++){
+        resault += " ";
+    }
+    for(let j = 0;j < 2 * i + 1;j++){
+        resault +="*";
+        if (j === 3){
+            break;
+        }
+        
+        // if(j = 4){
+        //     for(j = 2; j < 3;){
+        //         resault +=" ";
+        //     for(j = 2; j < 3;){
+        //         resault +="("
+        //     }
+        //     }
+        // }
+    }
+    resault +="\n";
+}
+console.log(resault);
+
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//    ***
+
+
+
+const linec = 5;
+let result = '';
+
+for(let i = 0;i <= linec;i++){
+   for(let j = 0;j < 25;j++){
+      result +="*";
+   }
+   if (linec.length === 2){
+    for(let k = 5;k < 6;k++);
+    break;
+   }
+   result +="\n";
+}
+console.log(result);    
+
+// **************************************   
+// **************************************
+// ***********     **
+// ********** *   *
+// **********  ***  
+// **********
+// **********
+// **********
+// **********

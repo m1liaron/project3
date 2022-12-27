@@ -74,7 +74,7 @@ function ret(){
 }
 
 const anotherNum = ret();
-cons.log(anotherNum);
+console.log(anotherNum);
 
 //
 
@@ -85,7 +85,7 @@ console.log("Hello");
 logger();
 
 //
-const calc = (a,b) =>  a + b;
+// const calc = (a,b) =>  a + b;
 
 const calc = (a,b) =>  {
     console.log('1');
