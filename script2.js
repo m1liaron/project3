@@ -374,7 +374,7 @@ function createCounter(){
     const myFunction = function (){
         counter = counter + 1;debugger
         return counter;debugger
-    }
+    };
     return myFunction;
 }
 debugger

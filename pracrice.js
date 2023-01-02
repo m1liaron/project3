@@ -222,7 +222,7 @@ const personalMovieDB = {
             // } 
             let genres = prompt(`Введите ваши любимые жанры через запятую`).toLocaleLowerCase; 
             if(genres === '' || genre === null ){ 
-                consol.log('Вы ввели не корректные данные ') 
+                console.log('Вы ввели не корректные данные ') 
                 i--; 
             }else{ 
                 personalMovieDB.genres = genres.split(', ');  
