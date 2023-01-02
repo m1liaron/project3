@@ -28,19 +28,22 @@ const adv = document.querySelectorAll('.promo__adv img'),
       poster =  document.querySelector('.promo__bg'),
       genre = poster.querySelector('.promo__genre'),
       movieList = document.querySelector('.promo__interactive-list'),
-      form = document.querySelector('.add'),
-      spna = form.querySelector('.yes');
+      formAdd = document.querySelector('form.add'),
+      addInput = formAdd.querySelector('.adding__input'),
+      checkBox = formAdd.querySelector('[type = checkbox]');
 
 adv.forEach(item => {
    item.remove(); 
 });
+
+link.addEventListener('click', function(event){
+   event.preventDefault();
+});
+
 genre.textContent = 'ДРАМА';
 
 poster.style.cssText = 'background-image: url("img/bg.jpg");';
 
-// movieList.forEach(item =>{
-//     item.remove();
-// });
 
 movieList.innerHTML = "";
 
